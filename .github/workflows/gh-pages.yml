@@ -5,7 +5,13 @@ on:
   push:
     branches:
       - main
+      - master
   workflow_dispatch:
+
+permissions:
+  id-token: write
+  pages: write
+  contents: read
 
 jobs:
   deploy:
