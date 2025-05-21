@@ -315,13 +315,17 @@ body{
 
 .loading-container{
 	margin: 40px auto;
+	display: flex; /* Added to help center #loading-icon */
+	align-items: center; /* Added to help center #loading-icon */
+	justify-content: center; /* Added to help center #loading-icon */
 }
 
 .loading{
-	border: 1px solid transparent;
+	border: 5px solid transparent; /* Increased border width for visibility */
 	border-color: transparent var(--accent-color) transparent var(--primary-color);
 	animation: rotate-loading 1.5s linear 0s infinite normal;
 	transform-origin: 50% 50%;
+	position: absolute; /* Added to allow #loading-icon to be centered on top */
 }
 
 .loading-container:hover .loading,
@@ -330,20 +334,21 @@ body{
 }
 
 #loading-icon{
-	width: 100px; /* Adjust as needed */
-	height: 100px; /* Adjust as needed */
-	border: 5px solid var(--primary-color); /* Adjust color and thickness as needed */
+	width: 80px; /* Adjusted to be smaller than .loading */
+	height: 80px; /* Adjusted to be smaller than .loading */
+	border: 5px solid var(--primary-color);
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 1.2em; /* Adjust as needed */
-	color: var(--primary-color); /* Adjust as needed */
-	animation: rotate-loading 1.5s linear 0s infinite normal; /* Apply existing animation */
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	font-size: 1em; /* Adjusted font size */
+	color: var(--primary-color);
+	/* animation: rotate-loading 1.5s linear 0s infinite normal; */ /* Removed animation */
+	position: relative; /* Changed from absolute to allow centering within flex container */
+	/* top: 50%; */ /* Removed as flex properties will handle centering */
+	/* left: 50%; */ /* Removed as flex properties will handle centering */
+	/* transform: translate(-50%, -50%); */ /* Removed as flex properties will handle centering */
+	text-align: center; /* Ensure text inside is centered */
 }
 
 @keyframes rotate-loading{
