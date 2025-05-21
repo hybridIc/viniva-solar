@@ -1,0 +1,18 @@
+/* Override green icons with blue */
+.icon-box i, 
+.fa-solid, 
+.fa-regular, 
+.fa-brands,
+.topbar-contact-info i,
+.topbar-social-links i,
+.footer-info-box i,
+.footer-social-links i {
+    color: #0066cc !important; /* Blue color */
+}
+
+/* If using SVG icons with fill colors */
+.icon-box svg,
+footer svg,
+.topbar svg {
+    fill: #0066cc !important;
+}

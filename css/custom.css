@@ -957,7 +957,7 @@ header.main-header .header-sticky.active{
 
 .about-company-item .icon-box{
 	position: relative;
-	background-color: var(--accent-color);
+	background-color: #2366d1;
 	width: 60px;
 	height: 60px;
 	border-radius: 100%;
@@ -1207,6 +1207,8 @@ header.main-header .header-sticky.active{
 
 .why-choose-item .icon-box{
 	margin-bottom: 20px;
+	/* Set icon color to blue variant */
+	color: #2366d1;
 }
 
 .why-choose-body{
@@ -2365,7 +2367,7 @@ header.main-header .header-sticky.active{
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     font-size: 18px;
-    color: var(--accent-color);
+    color: #2366d1;
     display: inline-block;
     line-height: normal;
     position: absolute;
@@ -2579,7 +2581,7 @@ header.main-header .header-sticky.active{
 }
 
 .team-social-icon ul li a i{
-    background: var(--accent-color);
+    background: #2366d1;
     color: var(--white-color);
     font-size: 18px;
     width: 40px;
@@ -2941,6 +2943,8 @@ header.main-header .header-sticky.active{
 
 .service-benefit-item .icon-box{
 	margin-bottom: 20px;
+	/* Set icon color to blue variant */
+	color: #2366d1;
 }
 
 .service-benefit-item .service-benefit-content h3{
@@ -3278,6 +3282,11 @@ header.main-header .header-sticky.active{
 	padding: 40px 40px 40px 110px;
 	margin-bottom: 30px;
 }
+
+
+
+
+
 
 .post-entry blockquote p{
 	color: var(--primary-color);
