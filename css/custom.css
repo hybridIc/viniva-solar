@@ -330,10 +330,19 @@ body{
 }
 
 #loading-icon{
+	width: 100px; /* Adjust as needed */
+	height: 100px; /* Adjust as needed */
+	border: 5px solid var(--primary-color); /* Adjust color and thickness as needed */
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.2em; /* Adjust as needed */
+	color: var(--primary-color); /* Adjust as needed */
+	animation: rotate-loading 1.5s linear 0s infinite normal; /* Apply existing animation */
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	max-width: 66px;
 	transform: translate(-50%, -50%);
 }
 
@@ -1913,7 +1922,6 @@ header.main-header .header-sticky.active{
 	top: 0;
 	font-size: 18px; /* Slightly reduced icon size for closer proximity */
 	color: var(--accent-color);
-	line-height: 1.2; /* Adjust line-height to better align icon with text */
 }
 
 .footer-info-box .icon-box i{
@@ -2981,11 +2989,6 @@ header.main-header .header-sticky.active{
 	background-size: auto;
 }
 
-.service-strategy .section-title h3{
-	background: var(--white-color);
-	color: var(--accent-color);
-}
-
 .service-strategy-image{
 	position: relative;
 	overflow: hidden;
@@ -3517,7 +3520,7 @@ header.main-header .header-sticky.active{
 .project-slider:after{
 	content: '';
     position: absolute;
-    background: url(../images/white-squre-bg-img.svg) no-repeat;
+    background: url(../images/white-squre-bg.svg) no-repeat;
     background-position: top left;
     background-size: 100% auto;
     left: 0;
@@ -3638,33 +3641,6 @@ header.main-header .header-sticky.active{
 .company-benefits-img-1 img{
 	aspect-ratio: 1/1;
 	object-fit: cover;
-}
-
-.company-benefits-counter{
-	background-image: url('../images/benefits-counter-bg.png');
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: contain;
-	text-align: center;
-	padding: 15px;
-}
-
-.company-benefits-counter h3{
-	font-size: 50px;
-	color: var(--accent-color);
-	margin-bottom: 5px;
-}
-
-.company-benefits-counter h3 span{
-	color: var(--primary-color);
-}
-
-.company-benefits-counter p{
-	font-size: 18px;
-	font-weight: 600;
-	color: var(--primary-color);
-	text-transform: uppercase;
-	margin: 0;
 }
 
 .company-benefits-img-2 img{
@@ -4751,7 +4727,6 @@ header.main-header .header-sticky.active{
 		font-size: 30px;
 	}
 }
-
 /* Responsive adjustments for service details list */
 @media (min-width: 992px) { /* Apply only to laptop and larger screens */
     .service-details-list ul {
