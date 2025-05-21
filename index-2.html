@@ -160,174 +160,7 @@
 		<!-- Header Start -->
 		<header class="main-header">
 			<div class="header-sticky">
-				<nav class="navbar navbar-expand-lg">
-					<div class="container">
-						<!-- Logo Start -->
-						<a
-							class="navbar-brand"
-							href="index.html"
-						>
-							<img
-								src="images/logo.png"
-								alt="Logo"
-							/>
-						</a>
-						<!-- Logo End -->
-
-						<!-- Main Menu Start -->
-						<div class="collapse navbar-collapse main-menu">
-							<div class="nav-menu-wrapper">
-								<ul
-									class="navbar-nav mr-auto"
-									id="menu"
-								>
-									<li class="nav-item submenu">
-										<a
-											class="nav-link"
-											href="index.html"
-											>Home</a
-										>
-										<ul class="sub-menu">
-											<li class="nav-item">
-												<a
-													class="nav-link"
-													href="index-2.html"
-													>Home - Image</a
-												>
-											</li>
-											<li class="nav-item">
-												<a
-													class="nav-link"
-													href="index-3.html"
-													>Home - Slider</a
-												>
-											</li>
-											<li class="nav-item">
-												<a
-													class="nav-link"
-													href="index-4.html"
-													>Home - Video</a
-												>
-											</li>
-										</ul>
-									</li>
-									<li class="nav-item">
-										<a
-											class="nav-link"
-											href="about.html"
-											>about us</a
-										>
-									</li>
-									<li class="nav-item">
-										<a
-											class="nav-link"
-											href="service.html"
-											>services</a
-										>
-									</li>
-									<li class="nav-item">
-										<a
-											class="nav-link"
-											href="blog.html"
-											>Blog</a
-										>
-									</li>
-									<li class="nav-item submenu">
-										<a
-											class="nav-link"
-											href="#"
-											>pages</a
-										>
-										<ul>
-											<li class="nav-item">
-												<a
-													class="nav-link"
-													href="service-single.html"
-													>service details</a
-												>
-											</li>
-											<li class="nav-item">
-												<a
-													class="nav-link"
-													href="blog-single.html"
-													>blog details</a
-												>
-											</li>
-											<li class="nav-item">
-												<a
-													class="nav-link"
-													href="project.html"
-													>project</a
-												>
-											</li>
-											<li class="nav-item">
-												<a
-													class="nav-link"
-													href="project-single.html"
-													>project details</a
-												>
-											</li>
-											<li class="nav-item">
-												<a
-													class="nav-link"
-													href="team.html"
-													>Our Team</a
-												>
-											</li>
-											<li class="nav-item">
-												<a
-													class="nav-link"
-													href="gallery.html"
-													>Our Gallery</a
-												>
-											</li>
-											<li class="nav-item">
-												<a
-													class="nav-link"
-													href="faqs.html"
-													>FAQ</a
-												>
-											</li>
-											<li class="nav-item">
-												<a
-													class="nav-link"
-													href="404.html"
-													>404</a
-												>
-											</li>
-										</ul>
-									</li>
-									<li class="nav-item">
-										<a
-											class="nav-link"
-											href="contact.html"
-											>Contact Us</a
-										>
-									</li>
-									<li class="nav-item highlighted-menu">
-										<a
-											class="nav-link"
-											href="#"
-											>Get a Quote</a
-										>
-									</li>
-								</ul>
-							</div>
-							<!-- Let’s Start Button Start -->
-							<div class="header-btn d-inline-flex">
-								<a
-									href="#"
-									class="btn-default"
-									>Get a Quote</a
-								>
-							</div>
-							<!-- Let’s Start Button End -->
-						</div>
-						<!-- Main Menu End -->
-						<div class="navbar-toggle"></div>
-					</div>
-				</nav>
-				<div class="responsive-menu"></div>
+				<!-- Navbar will be loaded here by JavaScript -->
 			</div>
 		</header>
 		<!-- Header End -->
@@ -1778,6 +1611,15 @@
 		<script src="js/wow.js"></script>
 		<!-- Main Custom js file -->
 		<script src="js/function.js"></script>
+		<!-- Main JS -->
+		<script src="js/main.js"></script>
+		<script>
+			fetch("navbar.html")
+				.then((response) => response.text())
+				.then((data) => {
+					document.querySelector(".header-sticky").innerHTML = data;
+				});
+		</script>
 	</body>
 
 	<!-- Mirrored from html.awaikenthemes.com/Viniva Solar/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 May 2025 06:38:53 GMT -->

@@ -533,6 +533,11 @@ header.main-header .header-sticky.active{
 	margin: 0;
 }
 
+.navbar-brand img {
+    max-height: 50px; /* Adjust this value as needed */
+    width: auto;
+}
+
 .main-menu .nav-menu-wrapper{
 	flex: 1;
 	text-align: center;
@@ -1622,7 +1627,7 @@ header.main-header .header-sticky.active{
 	color: var(--primary-color);
 	border: none;
 	box-shadow: none;
-	padding: 5px 30px 5px 80px;
+	padding: 8px 30px 8px 80px;
 	position: relative;
 	transition: all 0.3s ease-in-out;
 }
@@ -1663,7 +1668,7 @@ header.main-header .header-sticky.active{
 	bottom: auto;
 	transform: translateY(50%);
 	font-size: 22px;
-	line-height: 1em;
+	line-height: 1.1em;
 	color: var(--primary-color);
 	transition: all 0.3s ease-in-out;
 }
@@ -1806,28 +1811,28 @@ header.main-header .header-sticky.active{
 
 .main-footer{
 	position: relative;
-	padding: 60px 0 0;
+	padding: 30px 0 0; /* Reduced top padding */
 	background: var(--primary-color) url('../images/footer-squre-bg-img.svg') no-repeat;
 	background-position: right bottom;
 	background-size: auto;
 }
 
 .about-footer{
-	margin-right: 30px;
+	margin-right: 15px; /* Reduced margin */
 }
 
 .footer-logo{
-	margin-bottom: 30px;
+	margin-bottom: 15px; /* Reduced margin */
 }
 
 .footer-content{
-	margin-bottom: 30px;
+	margin-bottom: 15px; /* Reduced margin */
 }
 
 .footer-content p{
 	color: var(--secondary-color);
-	font-size: 16px;
-	margin: 0;
+	font-size: 14px; /* Reduced font size */
+	margin: 0 0 5px; /* Added small bottom margin */
 }
 
 .footer-social-links ul{
@@ -1858,10 +1863,10 @@ header.main-header .header-sticky.active{
 .footer-quick-links h2,
 .footer-contact-details h2,
 .footer-newsletter h2{
-	font-size: 22px;
+	font-size: 18px; /* Reduced font size */
+	margin-bottom: 10px; /* Reduced margin */
 	color: var(--secondary-color);
 	text-transform: capitalize;
-	margin-bottom: 40px;
 }
 
 .footer-quick-links ul{
@@ -1871,7 +1876,7 @@ header.main-header .header-sticky.active{
 }
 
 .footer-quick-links ul li{
-	 margin-bottom: 15px;
+	margin-bottom: 5px; /* Reduced margin */
 }
 
 .footer-quick-links ul li:last-child{
@@ -1879,10 +1884,9 @@ header.main-header .header-sticky.active{
 }
 
 .footer-quick-links ul li a{
-    display: block;
-    color: var(--secondary-color);
+	color: var(--secondary-color);
 	text-transform: capitalize;
-	transition: all 0.3s ease-in-out;
+	font-size: 14px; /* Reduced font size */
 }
 
 .footer-quick-links ul li a:hover{
@@ -1891,12 +1895,12 @@ header.main-header .header-sticky.active{
 
 .footer-contact-box .footer-info-box{
 	position: relative;
-    padding-left: 35px;
-    margin-bottom: 25px;
+	padding-left: 30px; /* Adjusted padding - you can reduce this further if needed */
+	margin-bottom: 10px; /* Reduced margin */
 }
 
 .footer-contact-box{
-	padding-right: 25px;
+	/* display: flex; */ /* This was commented out, assuming it's intentional */
 }
 
 .footer-contact-box .footer-info-box:last-child{
@@ -1905,17 +1909,19 @@ header.main-header .header-sticky.active{
 
 .footer-info-box .icon-box{
 	position: absolute;
-    top: 2px;
-    left: 0;
+	left: 0;
+	top: 0;
+	font-size: 18px; /* Slightly reduced icon size for closer proximity */
+	color: var(--accent-color);
+	line-height: 1.2; /* Adjust line-height to better align icon with text */
 }
 
 .footer-info-box .icon-box i{
-	color: var(--secondary-color);
-	font-size: 20px;
+	color: var(--accent-color);
 }
 
 .footer-info-box p{
-	font-size: 16px;
+	font-size: 14px; /* Reduced font size */
 	color: var(--secondary-color);
 	margin: 0;
 }
@@ -1978,15 +1984,15 @@ header.main-header .header-sticky.active{
 }
 
 .footer-copyright{
-	border-top: 1px solid var(--dark-divider-color);
-	padding: 20px 0;
-	text-align: center;
-	margin-top: 50px;
+	border-top: 1px solid rgba(255,255,255,0.1);
+	padding: 15px 0; /* Reduced padding */
+	margin-top: 20px; /* Reduced margin */
 }
 
 .footer-copyright-text p{
-	color: var(--white-color);
-	text-transform: capitalize;
+	font-size: 13px; /* Reduced font size */
+	color: var(--secondary-color);
+	text-align: center;
 	margin: 0;
 }
 
@@ -3254,6 +3260,7 @@ header.main-header .header-sticky.active{
     margin-bottom: 18px;
 }
 
+
 .post-entry ul li:before{
 	content: '\f058';
     font-family: 'Font Awesome 6 Free';
@@ -3262,7 +3269,7 @@ header.main-header .header-sticky.active{
     color: var(--accent-color);
     display: inline-block;
     line-height: normal;
-    position: absolute;
+       position: absolute;
     top: 4px;
     left: 0;
 }
@@ -3276,13 +3283,6 @@ header.main-header .header-sticky.active{
 .post-entry ol ol,
 .post-entry ol ul{
     margin-top: 20px;
-    margin-bottom: 0;
-}
-
-.post-entry ul ul li:last-child,
-.post-entry ul ol li:last-child,
-.post-entry.ol ol li:last-child,
-.post-entry ol ul li:last-child{
     margin-bottom: 0;
 }
 
@@ -4752,28 +4752,7 @@ header.main-header .header-sticky.active{
 	}
 }
 
-.service-details-list ul {
-    list-style: none; /* Remove default bullets */
-    padding-left: 0; /* Remove default padding */
-}
-
-.service-details-list ul li {
-    position: relative;
-    padding-left: 25px; /* Add padding to make space for the pseudo-element */
-    margin-bottom: 10px; /* Add some space between list items */
-}
-
-.service-details-list ul li::before {
-    content: "\\f00c"; /* FontAwesome check icon */
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    position: absolute;
-    left: 0;
-    top: 5px; /* Adjust vertical alignment as needed */
-    color: var(--primary-color); /* Or your desired color */
-}
-
-/* Responsive adjustments if needed */
+/* Responsive adjustments for service details list */
 @media (min-width: 992px) { /* Apply only to laptop and larger screens */
     .service-details-list ul {
         list-style: none; /* Remove default bullets */
