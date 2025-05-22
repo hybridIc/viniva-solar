@@ -405,17 +405,17 @@ body{
 
 .section-title-content{
 	margin-left: 100px;
-	text-align: right;
+	/* text-align: right; */ /* Removed to allow content to align based on its children or default block behavior */
 }
 
 .section-title-content p{
-	margin: 0;
-	text-align: left; /* Added to align paragraph to the left */
-	padding: 15px;
-	background-color: #f9f9f9;
-	border-left: 5px solid var(--primary-color);
-	margin-bottom: 20px; /* Added space below the paragraph */
-	font-style: italic; /* Added italic style */
+	margin: 0; /* Retain zero margin */
+	text-align: left; /* Retain left alignment for the paragraph text */
+	/* padding: 15px; */ /* Removed padding */
+	/* background-color: #f9f9f9; */ /* Removed background color */
+	/* border-left: 5px solid var(--primary-color); */ /* Removed left border */
+	/* margin-bottom: 20px; */ /* Removed specific bottom margin */
+	/* font-style: italic; */ /* Removed italic style */
 }
 
 .section-title-content ul {
